@@ -1,36 +1,46 @@
 <div class="container">
-  <div class="row">
+  <div class="row d-flex align-items-end halfVh">
     <div class="col-12 mb-5">
-      <h1 class="text-center">חישוב הזמנת שוברי נסיעה לרכבת</h1>
+      <h1 class="text-center display-4">חישוב הזמנת שובר נסיעה לרכבת</h1>
     </div>
   </div>
-  <form [formGroup]="calculatorForm" (ngSubmit)="onSubmit()">
-    <div class="row">
-      <div class="col-4">
-        <mat-form-field>
-          <mat-label>בחר תאריך ושעת יציאה</mat-label>
-          <input matInput type="datetime-local" formControlName="leavingTime">
-          <mat-error>שדה חובה</mat-error>
-        </mat-form-field>
+  <div class="shadow-sm pb-4">
+    <form [formGroup]="calculatorForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-12 text-center">
+          <mat-form-field class="half-width">
+            <mat-label>בחר תאריך ושעת יציאה</mat-label>
+            <input matInput type="datetime-local" formControlName="leavingTime">
+            <mat-error>שדה חובה</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-12 text-center mt-0">
+          <button class="btn btn-primary btn-lg half-width" (click)="calculate()" type="button">חשב</button>
+        </div>
+        <div class="col-12 lead mt-3 text-center" *ngIf="isCalculated">
+          ניתן להזמין שובר לנסיעה זו החל מיום {{ leavingOrderedTime }} ({{ leavingFromNow }})
+        </div>
       </div>
-      <!--      <div class="col-3">-->
-      <!--        <mat-form-field>-->
-      <!--          <mat-label>בחר תאריך ושעת חזרה</mat-label>-->
-      <!--          <input matInput type="datetime-local" formControlName="wayBackTime">-->
-      <!--        </mat-form-field>-->
-      <!--      </div>-->
-      <div class="col-2 mt-0">
-        <button class="btn btn-primary btn-lg" (click)="calculate()">חשב</button>
+
+      <div class="col-12 mt-3 text-center" *ngIf="showSendEmailButton">
+        <span>* קבלת תזכורת באימייל ברגע פתיחת ההזמנה: </span>
+        <div>
+          <mat-form-field>
+            <mat-label>אימייל</mat-label>
+            <input matInput formControlName="email">
+            <mat-error>הזן כתובת אימייל תקנית</mat-error>
+          </mat-form-field>
+        </div>
       </div>
-      <div class="col-6 lead mt-3" *ngIf="isCalculated">
-        ניתן להזמין שובר לנסיעה זו החל מיום {{ leavingOrderedTime }} ({{ leavingFromNow }})
+
+      <div class="row" *ngIf="showSendEmailButton">
+        <div class="col-12 text-center mt-3">
+          <button class="btn btn-success btn-lg half-width" type="submit">שלח לי תזכורת</button>
+        </div>
       </div>
-    </div>
-  </form>
 
-
-
-
+    </form>
+  </div>
 </div>
 
 

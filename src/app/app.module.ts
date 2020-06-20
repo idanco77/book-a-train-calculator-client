@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
-import { SpinnerService } from 'src/app/shared/spinner.service';
+import { SpinnerService } from 'src/app/shared/services/spinner.service';
 import { CalculatorComponent } from 'src/app/calculator/calculator.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,6 +14,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { DateAdapter, MatNativeDateModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
+import { CalculatorService } from 'src/app/shared/services/http/calculator.service';
+import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
+import { NotificationService } from 'src/app/shared/services/notification.service';
 
 @NgModule({
   declarations: [
@@ -30,9 +33,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
-  providers: [SpinnerService],
+  providers: [SpinnerService, CalculatorService, NotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
