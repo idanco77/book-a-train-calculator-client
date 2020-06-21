@@ -13,6 +13,7 @@
             <input matInput type="datetime-local" formControlName="leavingTime">
             <mat-error>שדה חובה</mat-error>
           </mat-form-field>
+          <p class="small text-danger text-center" *ngIf="leavingTimeValidationError">הזן תאריך ושעת יציאה</p>
         </div>
         <div class="col-12 text-center mt-0">
           <button class="btn btn-primary btn-lg half-width" (click)="calculate()" type="button">חשב</button>

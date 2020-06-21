@@ -1,3 +1,3 @@
 export abstract class SettingsService {
-  public static HOURSINADVANCE = 85;
+  public static HOURSINADVANCE = 48;
 }

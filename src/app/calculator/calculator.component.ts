@@ -10,7 +10,13 @@ import { NotificationService } from 'src/app/shared/services/notification.servic
 @Component({
   selector: 'app-calculator',
   templateUrl: './calculator.component.html',
-  styles: [`.halfVh {height: 30vh} .half-width {width: 50%;}`]
+  styles: [`.halfVh {
+    height: 30vh
+  }
+
+  .half-width {
+    width: 50%;
+  }`]
 })
 export class CalculatorComponent implements OnInit {
   calculatorForm: FormGroup;
@@ -20,6 +26,7 @@ export class CalculatorComponent implements OnInit {
   showSendEmailButton = false;
   calculatedTime: Moment;
   unixTimestamp: number;
+  leavingTimeValidationError = false;
 
   constructor(private spinnerService: SpinnerService, private calculatorService: CalculatorService,
               private notificationService: NotificationService) {
@@ -33,21 +40,24 @@ export class CalculatorComponent implements OnInit {
   }
 
   calculate(): void {
-    if (this.calculatorForm.get('leavingTime').valid) {
-      this.isCalculated = true;
-      moment.relativeTimeThreshold('m', 60);
-      moment.relativeTimeThreshold('h', 24 * 26);
-      this.calculatedTime = moment(this.calculatorForm.get('leavingTime').value)
-        .subtract(SettingsService.HOURSINADVANCE, 'hours').locale('he');
-
-      this.unixTimestamp = moment(this.calculatorForm.get('leavingTime').value)
-        .subtract(SettingsService.HOURSINADVANCE, 'hours').locale('he').unix();
-
-      this.leavingOrderedTime = this.calculatedTime.format('LLLL');
-      this.leavingFromNow = this.calculatedTime.fromNow();
-      this.checkEmailAvailability();
-      this.setValidators();
+    if (!this.calculatorForm.get('leavingTime').valid) {
+      this.leavingTimeValidationError = true;
+      return;
     }
+    this.leavingTimeValidationError = false;
+    this.isCalculated = true;
+    moment.relativeTimeThreshold('m', 60);
+    moment.relativeTimeThreshold('h', 24 * 26);
+    this.calculatedTime = moment(this.calculatorForm.get('leavingTime').value)
+      .subtract(SettingsService.HOURSINADVANCE, 'hours').locale('he');
+
+    this.unixTimestamp = moment(this.calculatorForm.get('leavingTime').value)
+      .subtract(SettingsService.HOURSINADVANCE, 'hours').locale('he').unix();
+
+    this.leavingOrderedTime = this.calculatedTime.format('LLLL');
+    this.leavingFromNow = this.calculatedTime.fromNow();
+    this.checkEmailAvailability();
+    this.setValidators();
   }
 
   private checkEmailAvailability(): void {
@@ -60,14 +70,14 @@ export class CalculatorComponent implements OnInit {
 
   onSubmit(): void {
     if (this.calculatorForm.valid) {
-      const data = {email: this.calculatorForm.get('email').value, orderedTime: this.unixTimestamp};
+      const data = { email: this.calculatorForm.get('email').value, orderedTime: this.unixTimestamp };
       this.spinnerService.setPageSpinner(true);
       this.calculatorService.sendEmail(data).then(response => {
         this.spinnerService.setPageSpinner(false);
         if (response) {
           this.notificationService.success('תזכורת תישלח לאימייל בזמן שהוגדר');
         } else {
-         this.notificationService.error('השליחה נכשלה. נסה שנית מאוחר יותר');
+          this.notificationService.error('השליחה נכשלה. נסה שנית מאוחר יותר');
         }
       });
     }

@@ -1,0 +1,80 @@
+[20-Jun-2020 21:13:09 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:13:21 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:13:35 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:13:40 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:15:47 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:15:53 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:16:43 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:18:50 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:19:55 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:23:13 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:23:16 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:24:40 UTC] PHP Warning:  require(/home/o7wjus85coer/public_html/bookatrainapi/../../asd/vendor/autoload.php): failed to open stream: No such file or directory in /home/o7wjus85coer/public_html/bookatrainapi/index.php on line 24
+[20-Jun-2020 21:24:40 UTC] PHP Fatal error:  require(): Failed opening required '/home/o7wjus85coer/public_html/bookatrainapi/../../asd/vendor/autoload.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/o7wjus85coer/public_html/bookatrainapi/index.php on line 24
+[20-Jun-2020 21:25:50 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
+[20-Jun-2020 21:25:56 UTC] PHP Fatal error:  Uncaught ErrorException: file_put_contents(/home/o7wjus85coer/book-a-train-calculator-api/storage/framework/views/d1f2174a22880ac039c4743095e63110eaba2f9a.php): failed to open stream: No such file or directory in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:133
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/home/o7wjus85c...', 133, Array)
+#1 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(133): file_put_contents('/home/o7wjus85c...', '<?php $__env->s...', 0)
+#2 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(129): Illuminate\Filesystem\Filesystem->put('/home/o7wjus85c...', '<?php $__env->s...')
+#3 /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(51): Illuminate\ in /home/o7wjus85coer/book_a_train_calculator_api/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 133
