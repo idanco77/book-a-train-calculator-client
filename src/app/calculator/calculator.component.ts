@@ -27,6 +27,7 @@ export class CalculatorComponent implements OnInit {
   calculatedTime: Moment;
   unixTimestamp: number;
   leavingTimeValidationError = false;
+  departureTimestamp: number;
 
   constructor(private spinnerService: SpinnerService, private calculatorService: CalculatorService,
               private notificationService: NotificationService) {
@@ -51,8 +52,10 @@ export class CalculatorComponent implements OnInit {
     this.calculatedTime = moment(this.calculatorForm.get('leavingTime').value)
       .subtract(SettingsService.HOURSINADVANCE, 'hours').locale('he');
 
-    this.unixTimestamp = moment(this.calculatorForm.get('leavingTime').value)
-      .subtract(SettingsService.HOURSINADVANCE, 'hours').locale('he').unix();
+    const departureTime = this.calculatorForm.get('leavingTime').value;
+
+    this.departureTimestamp = moment(departureTime).unix();
+    this.unixTimestamp = moment(departureTime).subtract(SettingsService.HOURSINADVANCE, 'hours').unix();
 
     this.leavingOrderedTime = this.calculatedTime.format('LLLL');
     this.leavingFromNow = this.calculatedTime.fromNow();
@@ -70,7 +73,11 @@ export class CalculatorComponent implements OnInit {
 
   onSubmit(): void {
     if (this.calculatorForm.valid) {
-      const data = { email: this.calculatorForm.get('email').value, orderedTime: this.unixTimestamp };
+      const data = {
+        email: this.calculatorForm.get('email').value,
+        departureTimestamp: this.departureTimestamp,
+        orderedTimestamp: this.unixTimestamp
+      };
       this.spinnerService.setPageSpinner(true);
       this.calculatorService.sendEmail(data).then(response => {
         this.spinnerService.setPageSpinner(false);
